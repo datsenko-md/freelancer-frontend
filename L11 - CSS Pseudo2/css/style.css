@@ -1,0 +1,116 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+	padding: 30px;
+	font-size: 24px;
+}
+
+button{
+	height: 48px;
+	background: #80b7b3;
+	box-shadow: 0 0 54px rgba(128, 183, 180, 54);
+	border-radius: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	display: inline-block;
+	padding: 10px 40px;
+	margin: 100px;
+}
+button::after{
+	content: '→'
+}
+button:hover{
+	background: #3a5856;
+	box-shadow: 0 0 54px rgba(58, 88, 86, 54);
+}
+button:active{
+	background: #818181;
+	box-shadow: 0 0 54px rgba(129, 129, 129, 54);
+}
+
+li::before{
+	content: '';
+	background: url('../img/icons/check\ icon.png') left 5px no-repeat;
+	padding: 0 0 0 30px;
+}
+
+ul li:first-child{
+	text-decoration: line-through;
+}
+ul li:first-child:hover{
+	text-decoration: none;
+}
+
+ul li:nth-child(2){
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+ul li:nth-child(2):hover{
+	text-shadow: none;
+	color: red;
+}
+ul li:nth-child(2):hover::before{
+	content: '';
+	background: url('../img/icons/check\ icon\ red.png') left 5px no-repeat;
+}
+
+ul li:nth-child(3){
+	font-style: italic;
+}
+ul li:nth-child(3):hover{
+	font-style: normal;
+}
+
+ul li:last-child{
+	text-transform: uppercase;
+}
+ul li:last-child:hover{
+	text-transform: none;
+}
+
+p{
+	margin: 0 0 30px 0;
+}
+.line::first-line{
+	color: red;
+}
+.letter::first-letter{
+	color: red;
+}
