@@ -13,3 +13,4 @@ HTML, CSS
 * [CSS Margins](/L7%20-%20CSS%20Margins/)
 * [CSS Styles](/L8%20-%20CSS%20Styles/)
 * [CSS Background](/L9%20-%20CSS%20Background/)
+* [CSS Pseudo](/L10%20-%20CSS%20Pseudo/)
