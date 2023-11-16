@@ -1,0 +1,36 @@
+@import 'nullstyle';
+
+.wrapper {
+}
+.block__column_1{
+}
+.block__column_2{
+	flex: 1 1 auto;
+}
+.block__column_3{
+}
+.block {
+
+		&__row {
+			display: flex;
+			flex-direction: column;
+			// align-items: flex-start;
+			// justify-content: space-between;
+			
+			height: 700px;
+			border: 20px solid #ece89d;
+			margin: 0 0 20px 0;
+		}
+		
+		&__column {
+			border: 20px solid #5e5373;
+		}
+
+		&__item {
+			background-color: #18b5a4;
+			padding: 50px;
+			font-size: 50px;
+			color: #fff;
+			font-weight: 700;
+		}
+}
