@@ -1,0 +1,35 @@
+@import 'nullstyle';
+
+.wrapper {
+}
+.block__column_1{
+}
+.block__column_2{
+}
+.block__column_3{
+}
+.block {
+
+		&__row {
+			display: flex;
+			
+			border: 20px solid #ece89d;
+			margin: 0 0 20px 0;
+		}
+		
+		&__column {
+			// flex-basis: 30%;
+			// flex-grow: 1;
+			// flex-shrink: 0;
+			flex: 0 1 auto;
+			border: 20px solid #5e5373;
+		}
+
+		&__item {
+			background-color: #18b5a4;
+			padding: 50px;
+			font-size: 50px;
+			color: #fff;
+			font-weight: 700;
+		}
+}

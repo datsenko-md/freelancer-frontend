@@ -21,3 +21,4 @@ HTML, CSS
 * [BEM](/L15%20-%20BEM/)
 * [Meta tags](/L16%20-%20Meta%20Tags/)
 * [Flex intro](/L17%20-%20Flex%20intro/)
+* [Flex elements](/L18%20-%20Flex%20elements/)
