@@ -1,0 +1,96 @@
+@import 'nullstyle';
+
+body {
+	padding: 30px;
+	font-size: 24px;
+}
+
+@mixin btnColor($color) {
+	background-color: $color;
+	box-shadow: 0 0 54px rgba(red($color), green($color), blue($color), 0.54);
+}
+
+$bntColor: #80b7b3;
+$btnColorActive: #818181;
+$btnColorHover: #3a5856;
+
+$greenCheck: url('../img/icons/check\ icon.png');
+$redCheck: url('../img/icons/check\ icon\ red.png');
+
+button{
+	padding: 10px 40px;
+	margin: 100px;
+
+	height: 48px;
+
+	border-radius: 30px;
+
+	color: #fff;
+	@include btnColor($bntColor);
+
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+	display: inline-block;
+
+	&::after{
+		content: '→'
+	}
+	&:hover{
+		@include btnColor($btnColorHover);
+	}
+	&:active{
+		@include btnColor($btnColorActive)
+	}
+}
+
+li {
+	&::before{
+		content: '';
+		background: $greenCheck left 5px no-repeat;
+		padding: 0 0 0 30px;
+	}
+
+	&:first-child{
+		text-decoration: line-through;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	&:nth-child(2){
+		text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+		&:hover{
+			text-shadow: none;
+			color: red;
+			&::before{
+				content: '';
+				background: $redCheck left 5px no-repeat;
+			}
+		}
+	}
+	
+	&:nth-child(3){
+		font-style: italic;
+		&:hover{
+			font-style: normal;
+		}
+	}
+
+	&:last-child{
+		text-transform: uppercase;
+		&:hover{
+			text-transform: none;
+		}
+	}
+}
+
+p{
+	margin: 0 0 30px 0;
+	&.line::first-line{
+		color: red;
+	}
+	&.letter::first-letter{
+		color: red;
+	}
+}
