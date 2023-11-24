@@ -24,3 +24,4 @@ HTML, CSS
 * [Flex elements](/L18%20-%20Flex%20elements/)
 * [Flex direction](/L19%20-%20Flex%20direction/)
 * [Flex practice](/L20%20-%20Flex%20practice/)
+* [GRID intro](/L21%20-%20Grid%20intro/)
