@@ -26,3 +26,4 @@ HTML, CSS
 * [Flex practice](/L20%20-%20Flex%20practice/)
 * [GRID intro](/L21%20-%20Grid%20intro/)
 * [GRID practice](/L22%20-%20Grid%20practice/)
+* [Adaptive images](/L23%20-%20Adaptive%20images/)
